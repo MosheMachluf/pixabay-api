@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>PixaSearch - Download Pictures For Free</title>
+    <script type="module" src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="strip container_fluid p-1 shadow">
+      <div class="container">
+        <h1 class="display-1 text-center my-5 text-white">
+          PixaSearch
+        </h1>
+
+        <div class="search_bar my-5">
+          <div class="search shadow-sm">
+            <select
+              class="sort form-control bg-transparent border-0"
+              id="id_sort_select"
+            >
+              <option value="">Sort By...</option>
+              <option value="likes">Popular</option>
+              <option value="tags">Name</option>
+            </select>
+
+            <button id="search_btn" class="bg-transparent border-0">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <input id="searchQ" type="search" placeholder="Search Picture..." />
+            <div id="loading_search" class="mr-4"></div>
+            <i
+              role="presentation"
+              class="close fa fa-times-circle"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container_fluid mt-4">
+      <div class="container">
+        <div class="grid-pics my-3" id="view_result"></div>
+        <div id="error"></div>
+      </div>
+    </div>
+
+    <footer class="container-fluid py-3 mt-5">
+      <div class="container text-center text-muted">
+        Moshe Machluf &copy; 2020
+      </div>
+    </footer>
+  </body>
+</html>
